@@ -21,7 +21,7 @@ mem_usage=$(free -m | awk '/Mem:/ {print $3"MB / "$2"MB"}')
 current_time=$(date +"%H:%M:%S")
 
 clear
-echo -e "${RED}+-------------${NC}---------------${GREEN}----------------+"
+echo -e "+${RED}-------------${NC}---------------${GREEN}----------------${NC}+"
 
 # چک کردن اتصال اینترنت با پینگ به گوگل
 if ping -c 1 8.8.8.8 &> /dev/null; then
@@ -35,4 +35,4 @@ echo -e "${BLACK}B ${NC}| ${YELLOW}Current time ${RED} :${NC}   $current_time ${
 echo -e "${BLACK}O ${NC}| ${YELLOW}Memory Usage ${RED} :${NC}   $mem_usage        ${NC}| "
 echo -e "${BLACK}L ${NC}| ${YELLOW}System uptime ${RED}:${NC}   ${NC}$uptime_output ${NC}| "
 
-echo -e "${RED}+-------------${NC}---------------${GREEN}----------------+"
+echo -e "+${RED}-------------${NC}---------------${GREEN}----------------${NC}+"
