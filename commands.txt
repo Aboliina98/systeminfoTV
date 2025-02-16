@@ -1,0 +1,2 @@
+for color : for i in {0..255}; do echo -e "\e[38;5;${i}m Color ${i}"; done
+for background color : for i in {0..255}; do echo -e "\e[48;5;${i}m\e[38;5;0m Background ${i}"; done
