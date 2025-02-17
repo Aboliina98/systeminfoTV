@@ -11,5 +11,5 @@ then
     echo "programm colsed . "
     exit 0
 else
-    echo ""
+    echo "try agian for currectly input."
 fi
